@@ -1,0 +1,17 @@
+<%-include("./partials/header.ejs") %>
+<main>
+  <h1>Blog Home Page</h1>
+  <table border="1">
+    <tr>
+        <th colspan="3">LIST</th>     
+    </tr>
+    <% let i=0; if(locals.title){ title.forEach((Item)=>{ %>
+    <tr>
+      <td class="title"><a href="/view?id=<%=i%>"><%=Item%></a></td>
+      <td><a href="/update?id=<%=i%>">Update</a></td>
+      <td><a href="/delete?id=<%=i%>">Delete</td>
+    </tr>
+    <% i++; }); } %>
+  </table>
+</main>
+<%-include("./partials/footer.ejs") %>

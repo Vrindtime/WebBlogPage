@@ -1,0 +1,15 @@
+<%-include("partials/header.ejs") %>
+<main>
+  <h4><% id %></h4>
+  <h1>Update Your Blog</h1>
+  <form action="/updateAction" method="POST">
+    <input type="hidden" name="id" value="<%= id %>" />
+    <label for="title">Enter your Title:</label>
+    <input type="text" name="title" required value="<%= title[id] %>" />
+    <input type="submit" />
+    <br />
+    <label for="content">Enter your Content:</label><br />
+    <textarea name="content" id="content"><%= content[id] %></textarea>
+  </form>
+</main>
+<%-include("partials/footer.ejs") %>

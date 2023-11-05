@@ -1,0 +1,14 @@
+<%-include("partials/header.ejs") %>
+<main>
+  <h1>Express Your Blog</h1>
+  <form action="/createAction" method="POST">
+    <label for="title">Enter your Title:</label>
+    <input type="text" name="title" required />
+    <input type="submit" />
+    <br />
+    <br />
+    <label for="content">Enter your Content:</label><br />
+    <textarea name="content" id="content"></textarea>
+  </form>
+</main>
+<%-include("partials/footer.ejs") %>
