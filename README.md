@@ -1,4 +1,4 @@
-Index page/Home page
+<h1>Index page/Home page</h1>
 ![image](https://github.com/Vrindtime/WebBlogPage/assets/60149864/785476fb-05bc-47dd-a3de-e48caf2049ed)
 
 
